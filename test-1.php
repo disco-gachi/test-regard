@@ -35,7 +35,7 @@ function reverse(test $head) {
 	}
 	
 	foreach ($objMap as $key => $obj) {
-		$nextObj = $objMap[$key + 1];
+		$nextObj = $objMap[$key + 1] ?? null;
 		$obj->next = $nextObj;
 	}
 	
